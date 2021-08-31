@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  app:
+    image: node:14-alpine3.11
+    command: npm run dev
+    working_dir: /app
+    container_name: infracommerce-library-api
+    restart: always
+    environment:
+      - NODE_ENV=dev-docker
+    volumes:
+      - ./:/app
+    ports:
+      - 3000:3000
