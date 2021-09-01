@@ -1,0 +1,35 @@
+{
+  "name": "Infracommerce",
+  "version": "1.0.0",
+  "description": "Aqui serão encontrados os detalhes de como o projeto foi estruturado. #vqv 🚀",
+  "main": "index.js",
+  "scripts": {
+    "start": "node && copyfiles dist/src/shared/infra/http/server.js",
+    "dev": "ts-node-dev -r tsconfig-paths/register  --inspect --transpile-only --ignore-watch node_modules ./src/shared/infra/http/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hleoc/Projeto-Infracommerce-Library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hleoc/Projeto-Infracommerce-Library/issues"
+  },
+  "homepage": "https://github.com/hleoc/Projeto-Infracommerce-Library#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "path": "^0.12.7",
+    "reflect-metadata": "^0.1.13",
+    "tsconfig-paths": "^3.11.0"
+  }
+}
